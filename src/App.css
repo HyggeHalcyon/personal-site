@@ -3,14 +3,19 @@
                       Global styles
   ====================================================
 */
-
 /* https://fonts.google.com/specimen/Source+Code+Pro */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 body {
-  background-color: #1b1b1b;
+  background-color: black;
   color: #f5f5f5;
   font-family: 'Source Code Pro', monospace;
+}
+
+hr {
+  background-color: #c5c5c5;
+  height: 2px; 
+  border: none; 
 }
 
 a {
@@ -22,12 +27,52 @@ a:hover {
   color: #f5f5f5;
 }
 
+.align-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 60%
+}
+
 /* 
   ==================================================== 
                   Components Specific
   ====================================================
 */
-
 .not-found {
   margin-top: 40px;
+}
+
+.nrp {
+  margin: 0;
+  font-size: 25px;
+  text-shadow: 0 0 15px rgb(0, 221, 255);
+  letter-spacing: 5px;
+}
+
+#landing-title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-shadow: 0 0 15px rgb(0, 221, 255);
+  letter-spacing: 5px;
+}
+
+.landing-page-socials > li > a > i {
+  margin: 20px 20px 7px 20px;
+  font-size: 50px;
+  transition: transform 0.17s ease-in-out;
+}
+
+.landing-page-socials > li > a > p {
+  text-decoration: none;
+  visibility: hidden;
+}
+
+.landing-page-socials > li > a > i:hover + p {
+  visibility: visible;  
+}
+
+.landing-page-socials > li > a > i:hover {
+  transform: scale(1.2); 
 }
