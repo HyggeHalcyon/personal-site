@@ -1,0 +1,33 @@
+/* 
+  ==================================================== 
+                      Global styles
+  ====================================================
+*/
+
+/* https://fonts.google.com/specimen/Source+Code+Pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+  background-color: #1b1b1b;
+  color: #f5f5f5;
+  font-family: 'Source Code Pro', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #c5c5c5;
+}
+
+a:hover {
+  color: #f5f5f5;
+}
+
+/* 
+  ==================================================== 
+                  Components Specific
+  ====================================================
+*/
+
+.not-found {
+  margin-top: 40px;
+}
