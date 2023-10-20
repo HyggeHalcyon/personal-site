@@ -5,7 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 const Navigation = () => {
   return (
     <>
-      <Navbar variant='dark' sticky='top' data-bs-theme="dark">
+      <Navbar variant='dark' sticky='top' data-bs-theme="dark" className='navbar'>
         <Container fluid>
           <Navbar.Toggle aria-controls="navbar" />
           <Navbar.Collapse id="navbar">

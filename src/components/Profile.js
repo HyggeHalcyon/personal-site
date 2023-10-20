@@ -80,13 +80,18 @@ const Profile = () => {
     <>
         <Container>
           <Container>
-            <h1><img src={indexIco} className="index-logo" alt="icon" /> Profile </h1>
+            <h1><img src={indexIco} className="index-logo"/> Profile </h1>
             <div>
               <p>A computer nerd who loves delving to the intricacies of the low level computer systems.</p>
-              <p>Outside of the tech field, I am also fond of learning Anthropology, History, and Linguistics, primarily focusing on Europe, East Asia, and the Middle East dating back to the Celtic, Old Norse, and Mesopotamian eras.</p>
+              <p>I'm goes by my internet aliases:
+                <ul>
+                  <li>HyggeHalcyon</li>
+                  <li>BuShiYue</li>
+                </ul>
+              </p>
             </div>
           </Container>
-          <Container>
+          <Container className='my-5'>
             <h2 align="center">Timeline</h2>
             <hr />
             <VerticalTimeline>

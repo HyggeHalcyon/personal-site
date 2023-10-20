@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
-import Navigation from './components/Navigation'
 import './App.css'
 
+import Navigation from './components/Navigation'
 import Landing from './components/Landing'
 import Profile from './components/Profile'
 import Security from './components/Security'
