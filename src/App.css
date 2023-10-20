@@ -49,13 +49,6 @@ a:hover {
   margin-top: 40px;
 }
 
-.nrp {
-  margin: 0;
-  font-size: 25px;
-  text-shadow: 0 0 15px rgb(0, 221, 255);
-  letter-spacing: 5px;
-}
-
 #landing-title {
   text-transform: uppercase;
   font-size: 4rem;
@@ -95,4 +88,25 @@ a:hover {
 
 .timeline-date {
   opacity: 1!important;
+}
+
+.page-short-summary > p > span {
+  color: aqua;
+}
+
+.techstack-logo{
+  font-size: 35px;
+  margin: 0 0 0 0;
+}
+
+.techstack-logo > ul > li {
+  margin: 0px 20px 7px 20px;
+}
+
+.techstack-logo > ul > li > p{
+  font-size: 15px;
+}
+
+.ctf-team {
+  margin: 7px 0px 7px 00px;
 }

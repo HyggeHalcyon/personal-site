@@ -1,9 +1,9 @@
 import React from 'react'
-import { Container, Row, Col, ListGroup, Image } from 'react-bootstrap';
+import { Container, Row, Col, ListGroup, Image, Badge } from 'react-bootstrap';
 
 import indexIco from '../assets/apple-command-light.png';
 import HCS  from '../assets/HCS.png';
-import TCP1P from '../assets/TCP1P.jpeg';
+import TCP1P from '../assets/TCP1P.png';
 
 const Certification = ({certUrl, imgUrl, title}) => {
   return (
@@ -19,6 +19,17 @@ const Certification = ({certUrl, imgUrl, title}) => {
   )
 }
 
+const CtfTeam = ({logo, name, link}) => {
+  return (
+    <li className='ctf-team'><a href={link} target="_blank" rel="noreferrer">
+    <Badge pill text='white' bg='dark' className='pr-3 pl-2 pt-1 pb-1'>
+      <img src={logo} className="index-logo"/>  
+      <span> {name} </span>
+    </Badge>
+  </a></li>
+  )
+}
+
 const Security = () => {
   return (
     <>
@@ -26,27 +37,26 @@ const Security = () => {
 
         <Container>
             <h1><img src={indexIco} className="index-logo"/> Security </h1>
-            <div>
+            <div className='page-short-summary'>
               <p> My main passion lies in Information Security. </p>
-              <p> Sometimes I play CTFs, sometimes I do bug bounties. </p>
+              <p> In my free time, I participate in CTFs focusing in 
+                <span> Exploit Development </span> 
+                and 
+                <span> Reverse Engineering</span>. 
+              </p>
+              <p> Once in a while I also try Bug Hunting and get lucky. </p>
               <p> currently playing for: 
                 <ul>
-                  <li><a href="https://www.linkedin.com/company/heroes-cyber-security/" target="_blank" rel="noreferrer">
-                    <img src={HCS} className="index-logo"/>  
-                    <span> Heroes Cyber Security </span>
-                  </a></li>
-                  <li><a href="https://www.linkedin.com/company/tcp1p/" target="_blank" rel="noreferrer">
-                    <img src={TCP1P} className="index-logo"/>  
-                    <span> TCP1P </span>
-                  </a></li>
+                  <CtfTeam logo={HCS} name={"Heroes Cyber Security"} link={"https://ctftime.org/team/70159"}/>
+                  <CtfTeam logo={TCP1P} name={"TCP1P"} link={"https://ctftime.org/team/187248"}/>
                 </ul>
               </p>
             </div>
           </Container>
 
-          <Container className='my-5'>
+          <Container className='my-4'>
             <h2 align="center">CTFs Competition</h2>
-            <h6 className='text-center'>Full list: <a a href="https://github.com/HyggeHalcyon/CTFs-Writeups" target="_blank" rel="noreferrer">Github</a></h6>
+            <h6 className='text-center'><a a href="https://github.com/HyggeHalcyon/CTFs-Writeups" target="_blank" rel="noreferrer"> Full list </a></h6>
             <hr />
               <Row className='my-5'>
                 <Col> 
@@ -67,8 +77,6 @@ const Security = () => {
                 </Col>
               </Row>
               <Row className='justify-content-md-center'>
-                <Col>
-                </Col>
                 <Col md="auto">
                   <h3 align="center">Indonesian</h3>
                   <ListGroup a="ul">
@@ -82,8 +90,6 @@ const Security = () => {
                     <li> 9th — Gemastik XVI Cyber Security (Final)</li>
                     <li> 5th — Gemastik XVI Cyber Security (Quals)</li>
                   </ListGroup>
-                </Col>
-                <Col>
                 </Col>
               </Row>
           </Container>

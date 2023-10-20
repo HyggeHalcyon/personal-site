@@ -25,6 +25,9 @@ const Navigation = () => {
               <LinkContainer to="/gallery">
                 <Nav.Link className='text-center'> Gallery </Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/contact">
+                <Nav.Link className='text-center'> Contact </Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>

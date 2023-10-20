@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const Socials = ({href, icons, text}) => {
     return (
@@ -50,19 +51,20 @@ class Landing extends React.Component {
     render() {
         return (
             <>
-                <div className='container'>
-                    <div className='align-center text-center'>
-                        <p className='nrp'> 5026221079 </p>
-                        <h1 id="landing-title" data-value="Fawwaz Razani"> Fawwaz Razani </h1>
-                        <hr />
-        
-                        <ul className="list-inline landing-page-socials">
-                            <Socials text="LinkedIn" icons="fab fa-linkedin fa-3x" href="https://www.linkedin.com/in/fawwazrazani/" />
-                            <Socials text="Github" icons="fab fa-github" href="https://github.com/HyggeHalcyon" />
-                            <Socials text="CTFs" icons="fas fa-flag" href="https://hyggehalcyon.gitbook.io/page/ctfs/2023" />
-                        </ul>
+                <Container>
+                    <div className='container'>
+                        <div className='align-center text-center'>
+                            <h1 id="landing-title" data-value="Fawwaz Razani"> Fawwaz Razani </h1>
+                            <hr />
+            
+                            <ul className="list-inline landing-page-socials">
+                                <Socials text="LinkedIn" icons="fab fa-linkedin fa-3x" href="https://www.linkedin.com/in/fawwazrazani/" />
+                                <Socials text="Github" icons="fab fa-github" href="https://github.com/HyggeHalcyon" />
+                                <Socials text="CTFs" icons="fas fa-flag" href="https://hyggehalcyon.gitbook.io/page/ctfs/2023" />
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                </Container>
             </>
         )
     }

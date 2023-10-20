@@ -79,11 +79,20 @@ const Profile = () => {
   return (
     <>
         <Container>
+
           <Container>
             <h1><img src={indexIco} className="index-logo"/> Profile </h1>
-            <div>
-              <p>A computer nerd who loves delving to the intricacies of the low level computer systems.</p>
-              <p>I'm goes by my internet aliases:
+            <div className='page-short-summary'>
+              <p> A computer nerd who loves delving to the intricacies of the low level computer systems. </p>
+              <p> At the moment I'm focusing my study around 
+                <span> Offensive Security </span> 
+                and
+                <span> Machine Learning </span>  
+                in its application within 
+                <span> Detection Engineering</span>
+                . I mostly self-taught with the resources I can find on the internet and communities alike. 
+              </p>
+              <p> On the internet I'm also goes by:
                 <ul>
                   <li>HyggeHalcyon</li>
                   <li>BuShiYue</li>
@@ -91,6 +100,7 @@ const Profile = () => {
               </p>
             </div>
           </Container>
+
           <Container className='my-5'>
             <h2 align="center">Timeline</h2>
             <hr />
@@ -114,6 +124,7 @@ const Profile = () => {
               />
             </VerticalTimeline>
           </Container>
+          
         </Container>
     </>
   )
