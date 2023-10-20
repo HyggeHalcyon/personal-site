@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7c700c87.css",
+    "main.js": "/static/js/main.166844a0.js",
+    "static/media/underconstruction.png": "/static/media/underconstruction.e5dbd51c74b87409b41d.png",
+    "static/media/tedxits.png": "/static/media/tedxits.aedf3e78cf24277c58a7.png",
+    "static/media/mabacup.png": "/static/media/mabacup.d91e724c3937a3c5f4a9.png",
+    "static/media/sreits.png": "/static/media/sreits.cacb92111eec90d0387d.png",
+    "static/media/personalweb.png": "/static/media/personalweb.2f121f0d3de98a1c5f40.png",
+    "static/media/comingsoon.png": "/static/media/comingsoon.597283f0fb045513efaf.png",
+    "static/media/apple-command-light.png": "/static/media/apple-command-light.703580963ea7ab63b85e.png",
+    "static/media/HCS.png": "/static/media/HCS.67247bebf7154828da65.png",
+    "index.html": "/index.html",
+    "main.7c700c87.css.map": "/static/css/main.7c700c87.css.map",
+    "main.166844a0.js.map": "/static/js/main.166844a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c700c87.css",
+    "static/js/main.166844a0.js"
+  ]
+}
