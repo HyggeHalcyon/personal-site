@@ -5,7 +5,7 @@ const Socials = ({href, icons, text}) => {
         <li className="list-inline-item">
             <a className='text-center' target="_blank" rel="noreferrer" href={href}>
                 <i className={icons}></i>
-                <p className='hide'> {text} </p>
+                <p> {text} </p>
             </a>
         </li>
     )
@@ -58,7 +58,7 @@ class Landing extends React.Component {
         
                         <ul className="list-inline landing-page-socials">
                             <Socials text="LinkedIn" icons="fab fa-linkedin fa-3x" href="https://www.linkedin.com/in/fawwazrazani/" />
-                            <Socials text="Github" icons="fab fa-github" href="github.com/HyggeHalcyon" />
+                            <Socials text="Github" icons="fab fa-github" href="https://github.com/HyggeHalcyon" />
                             <Socials text="CTFs" icons="fas fa-flag" href="https://hyggehalcyon.gitbook.io/page/ctfs/2023" />
                         </ul>
                     </div>
