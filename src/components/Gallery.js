@@ -14,7 +14,6 @@ const Collection = ({title, basho, location, date, photos, layout, pad}) => {
       <div className='my-5 text-center'>
         <h3> {title} </h3>
         <p className='text-center'> {basho} | {location} | {date} </p>
-        <hr className='spec-hr'/>
         <PhotoAlbum 
           photos={photos}
           layout={layout ? layout : 'rows'}
@@ -34,36 +33,36 @@ const Gallery = () => {
         </Container>
 
         <Container>
-            <Collection 
-              title={"Compfest 15 CTF"}
-              basho={"University of Indonesia"}
-              location={"Jakarta, Indonesia"}
-              date={"2023"}
-              photos={compfest15}
-              layout={'columns'}
-            />
           <Collection 
-              title={"Heroes Cyber Security Kopdar"}
-              basho={"Sepuluh Nopember Institute of Technology"}
-              location={"Surabaya, Indonesia"}
-              date={"2023"}
-              photos={hcskopdar}
-            />
-            <Collection 
-              title={"Gemastik XVI"}
-              basho={"Brawijaya University"}
-              location={"Malang, Indonesia"}
-              date={"2023"}
-              photos={gemastik}
-            />
-            <Collection 
-              title={"Unity 2023 CTF"}
-              basho={"Yogyakarta State University"}
-              location={"Yogyakarta, Indonesia"}
-              date={"2023"}
-              photos={unity}
-              layout={'columns'}
-            />
+            title={"Compfest 15 CTF"}
+            basho={"University of Indonesia"}
+            location={"Jakarta, Indonesia"}
+            date={"2023"}
+            photos={compfest15}
+            layout={'columns'}
+          />
+          <Collection 
+            title={"Heroes Cyber Security Kopdar"}
+            basho={"Sepuluh Nopember Institute of Technology"}
+            location={"Surabaya, Indonesia"}
+            date={"2023"}
+            photos={hcskopdar}
+          />
+          <Collection 
+            title={"Gemastik XVI"}
+            basho={"Brawijaya University"}
+            location={"Malang, Indonesia"}
+            date={"2023"}
+            photos={gemastik}
+          />
+          <Collection 
+            title={"Unity 2023 CTF"}
+            basho={"Yogyakarta State University"}
+            location={"Yogyakarta, Indonesia"}
+            date={"2023"}
+            photos={unity}
+            layout={'columns'}
+          />
         </Container>
       </Container>
     </>

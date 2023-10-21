@@ -73,9 +73,9 @@ const Projects = () => {
           <p> I peaked a lot of interest and build stuff around them </p>
           </Container>
 
-          <Container className='my-5'>
+          <Container className='mt-5'>
             <h2 align="center" > Technologies </h2>
-            <hr className='spec-hr'/>
+            <hr/>
             <Row className='justify-content-md-center'>
                 <Col md="auto">
                   <h5 align="center">Programming Languanges</h5>
@@ -93,16 +93,7 @@ const Projects = () => {
                   </div>
                 </Col>
             </Row>
-            <Row>
-                <Col> 
-                  <h5 align="center">Databases</h5>
-                  <div className='techstack-logo text-center'>
-                    <ul className='list-inline'>
-                      <TechStack icon={<SiPostgresql/>} title="Postgresql" />
-                      <TechStack icon={<SiMariadb/>} title="MariaDB" />
-                    </ul>
-                  </div>
-                </Col>
+            <Row className='justify-content-md-center'>
                 <Col >
                   <h5 align="center">Cloud</h5>
                   <div className='techstack-logo text-center'>
@@ -114,11 +105,22 @@ const Projects = () => {
                   </div>
                 </Col>
               </Row>
+              <Row className='justify-content-md-center'>
+                <Col> 
+                  <h5 align="center">Databases</h5>
+                  <div className='techstack-logo text-center'>
+                    <ul className='list-inline'>
+                      <TechStack icon={<SiPostgresql/>} title="Postgresql" />
+                      <TechStack icon={<SiMariadb/>} title="MariaDB" />
+                    </ul>
+                  </div>
+                </Col>
+              </Row>
           </Container>
 
-          <Container>
+          <Container className='mt-3'>
           <h2 align="center"> Things I made </h2>
-            <hr className='spec-hr'/>
+            <hr/>
             <Project 
               name={"ITS-Nabu"}
               description={[
