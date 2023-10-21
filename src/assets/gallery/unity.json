@@ -1,3 +1,6 @@
 [
-    {"src": "/gallery/unity-2.jpg", "width": 500, "height": 282}
+    {"src": "/gallery/unity-3.jpg", "width": 5184, "height": 3456},
+    {"src": "/gallery/unity-1.jpg", "width": 5184, "height": 3456},
+    {"src": "/gallery/unity-2.jpg", "width": 500, "height": 282},
+    {"src": "/gallery/unity-4.jpg", "width": 5184, "height": 3456}
 ]
