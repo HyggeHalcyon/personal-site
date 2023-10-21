@@ -14,9 +14,10 @@ const Collection = ({title, basho, location, date, photos, layout, pad}) => {
       <div className='my-5 text-center'>
         <h3> {title} </h3>
         <p className='text-center'> {basho} | {location} | {date} </p>
+        <hr className='spec-hr'/>
         <PhotoAlbum 
           photos={photos}
-          layout={layout ? layout : 'rows' }
+          layout={layout ? layout : 'rows'}
         />
       </div>
     </>
@@ -28,7 +29,7 @@ const Gallery = () => {
     <>
       <Container>
         <Container>
-          <h1><img src={indexIco} className="index-logo"/> Gallery </h1>
+          <h1 className='text-shadow'><img src={indexIco} className="index-logo"/> Gallery </h1>
           <p>Such introvert promise himself to document and take more picture of his lyfe</p>
         </Container>
 

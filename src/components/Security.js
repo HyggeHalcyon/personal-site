@@ -36,7 +36,7 @@ const Security = () => {
       <Container>
 
         <Container>
-            <h1><img src={indexIco} className="index-logo"/> Security </h1>
+            <h1 className='text-shadow'><img src={indexIco} className="index-logo"/> Security </h1>
             <div className='page-short-summary'>
               <p> My main passion lies in Information Security. </p>
               <p> In my free time, I participate in CTFs focusing in 
@@ -95,7 +95,7 @@ const Security = () => {
           </Container>
 
           <Container className='my-5'>
-            <h2 align="center">CVEs</h2>
+            <h2 align="center" className='text-shadow'>CVEs</h2>
             <hr />
             <Row className='justify-content-md-center'>
             <ListGroup a="ul">
@@ -107,7 +107,7 @@ const Security = () => {
           </Container>
 
           <Container className='my-5'>
-            <h2 align="center">Certification</h2>
+            <h2 align="center" className='text-shadow'>Certification</h2>
             <hr />
             <Row className='justify-content-md-center'>
               <Certification 

@@ -21,9 +21,6 @@ const Contact = () => {
         const nameInput = form.current.querySelector('input[name="user_name"]')
         const emailInput = form.current.querySelector('input[name="user_email"]')
         const messageInput = form.current.querySelector('textarea[name="message"]')
-        console.log(nameInput.value)
-        console.log(emailInput.value)
-        console.log(messageInput.value)
 
         if(nameInput.value.trim() == '' || emailInput.value.trim() == '' || messageInput.value.trim() == ''){
             setError('Please fill in all fields.')
@@ -68,14 +65,13 @@ const Contact = () => {
         <Container>
 
             <Container>
-                <h1>
-                    <img src={indexIco} className="index-logo" /> Contact Me
-                </h1>
+                <h1 className='text-shadow'><img src={indexIco} className="index-logo" /> Contact Me</h1>
                 <p> Feel free to send me a hej! (hire me pls) </p>
             </Container>
 
             <Container>
-                <Row className="justify-content-md-center my-5">
+                <hr className='mt-5 spec-hr' />
+                <Row className="justify-content-md-center">
                     <img src={gif} className='contact-form-gif' alt="loading..." />
                     <Col md="auto">
                         <div className="contact-form">

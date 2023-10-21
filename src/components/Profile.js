@@ -81,7 +81,7 @@ const Profile = () => {
         <Container>
 
           <Container>
-            <h1><img src={indexIco} className="index-logo"/> Profile </h1>
+            <h1 className='text-shadow'><img src={indexIco} className="index-logo"/> Profile </h1>
             <div className='page-short-summary'>
               <p> A computer nerd who loves delving to the intricacies of the low level computer systems. </p>
               <p> At the moment I'm focusing my study around 

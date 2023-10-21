@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Container, Image, Badge, ListGroup } from 'react-bootstrap'
+import { Row, Col, Container, Image, Badge } from 'react-bootstrap'
 import {
   SiAnsible, SiAssemblyscript, SiC, SiCsharp, SiDocker, SiDotnet, SiExpress, 
   SiGo, SiJavascript, SiLaravel, SiMariadb, SiPhp, SiPostgresql, SiPython, SiReact, SiTypescript, 
@@ -31,7 +31,11 @@ const Project = ({name, description, techStack, imageSrc}) => {
           {
             techStack.map((item, index) => {  
               return (
-                <Badge pill className='mx-1' text='white' bg='dark'> 
+                <Badge pill 
+                  className='mx-1' 
+                  text={item.text ? item.text : 'white'} 
+                  bg={item.bg ? item.bg : 'dark'
+                }> 
                   {item.badge} {item.name} 
                 </Badge>
               )
@@ -65,13 +69,13 @@ const Projects = () => {
         <Container>
 
           <Container>
-          <h1><img src={indexIco} className="index-logo"/> Projects </h1>
+          <h1 className='text-shadow'><img src={indexIco} className="index-logo"/> Projects </h1>
           <p> I peaked a lot of interest and build stuff around them </p>
           </Container>
 
           <Container className='my-5'>
-            <h2 align="center"> Technologies </h2>
-            <hr />
+            <h2 align="center" > Technologies </h2>
+            <hr className='spec-hr'/>
             <Row className='justify-content-md-center'>
                 <Col md="auto">
                   <h5 align="center">Programming Languanges</h5>
@@ -114,7 +118,7 @@ const Projects = () => {
 
           <Container>
           <h2 align="center"> Things I made </h2>
-            <hr />
+            <hr className='spec-hr'/>
             <Project 
               name={"ITS-Nabu"}
               description={[
@@ -122,8 +126,8 @@ const Projects = () => {
               ]}
               imageSrc={underconstruction}
               techStack={[
-                {badge: <SiLaravel />, name: "Laravel"},
-                {badge: <SiMariadb />, name: "MariaDB"}
+                {badge: <SiLaravel />, name: "Laravel", bg: "danger"},
+                {badge: <SiMariadb />, name: "MariaDB", bg: "warning", text: "dark"}
               ]}
             />
             <Project 
@@ -133,8 +137,8 @@ const Projects = () => {
               ]}
               imageSrc={comingsoon}
               techStack={[
-                {badge: <SiCsharp />, name: "C#"},
-                {badge: <SiDotnet />, name: ".NET"}
+                {badge: <SiCsharp />, name: "C#", bg: "success"},
+                {badge: <SiDotnet />, name: ".NET", bg: "success"}
               ]}
             />
             <Project 
@@ -144,7 +148,7 @@ const Projects = () => {
               ]}
               imageSrc={personalweb}
               techStack={[
-                {badge: <SiReact />, name: "React"},
+                {badge: <SiReact />, name: "React", bg: "primary"},
               ]}
             />
             <Project 
@@ -154,8 +158,8 @@ const Projects = () => {
               ]}
               imageSrc={sreits}
               techStack={[
-                {badge: <SiGo />, name: "Golang"},
-                {badge: <SiPostgresql />, name: "Postgresql"}
+                {badge: <SiGo />, name: "Golang", bg: "info"},
+                {badge: <SiPostgresql />, name: "Postgresql", bg: "primary"}
               ]}
             />
             <Project 
@@ -165,8 +169,8 @@ const Projects = () => {
               ]}
               imageSrc={mabacup}
               techStack={[
-                {badge: <SiExpress />, name: "Express"},
-                {badge: <SiPostgresql />, name: "Postgresql"}
+                {badge: <SiExpress />, name: "Express", bg: "warning", text: "dark"},
+                {badge: <SiPostgresql />, name: "Postgresql", bg: "primary"}
               ]}
             />
             <Project 
@@ -176,8 +180,8 @@ const Projects = () => {
               ]}
               imageSrc={tedxits}
               techStack={[
-                {badge: <SiExpress />, name: "Express"},
-                {badge: <SiPostgresql />, name: "Postgresql"}
+                {badge: <SiExpress />, name: "Express", bg: "warning", text: "dark"},
+                {badge: <SiPostgresql />, name: "Postgresql", bg: "primary"}
               ]}
             />
           </Container>

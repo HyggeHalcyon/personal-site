@@ -55,7 +55,7 @@ class Landing extends React.Component {
                     <div className='container'>
                         <div className='align-center text-center'>
                             <h1 id="landing-title" data-value="Fawwaz Razani"> Fawwaz Razani </h1>
-                            <hr />
+                            <hr className='spec-hr'/>
             
                             <ul className="list-inline landing-page-socials">
                                 <Socials text="LinkedIn" icons="fab fa-linkedin fa-3x" href="https://www.linkedin.com/in/fawwazrazani/" />
